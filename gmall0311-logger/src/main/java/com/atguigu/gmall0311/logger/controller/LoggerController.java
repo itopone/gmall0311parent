@@ -21,7 +21,7 @@ public class LoggerController {
 
         KafkaTemplate<String,String> kafkaTemplate;
 
-        //  补充时间戳
+        //  补充时间戳 123
         JSONObject jsonObject = JSON.parseObject(logString);
 
         jsonObject.put("ts",System.currentTimeMillis());
