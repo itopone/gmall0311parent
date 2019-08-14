@@ -146,7 +146,7 @@ public class JsonMocker {
         return  jsonObject.toJSONString();
     }
 
-    public static void genLog() {
+    public static void  genLog() {
         JsonMocker jsonMocker = new JsonMocker();
         jsonMocker.startupNum = 1000000;
         for (int i = 0; i < jsonMocker.startupNum; i++) {
@@ -157,7 +157,7 @@ public class JsonMocker {
                 jsonMocker.sendLog(eventLog);
             }
             try {
-                Thread.sleep(20);
+                Thread.sleep(100);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

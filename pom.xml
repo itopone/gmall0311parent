@@ -11,6 +11,7 @@
     <modules>
         <module>gmall0311-mock</module>
         <module>gmall0311-common</module>
+        <module>gmall0311-logger</module>
     </modules>
 
     <parent>

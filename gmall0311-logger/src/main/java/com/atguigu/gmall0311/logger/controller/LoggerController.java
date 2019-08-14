@@ -14,12 +14,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class LoggerController {
 
+    @Autowired
+    KafkaTemplate<String,String> kafkaTemplate;
+
 
     @PostMapping("log")
     public String dolog(@RequestParam("logString") String logString){
 
 
-        KafkaTemplate<String,String> kafkaTemplate;
 
         //  补充时间戳 123
         JSONObject jsonObject = JSON.parseObject(logString);
